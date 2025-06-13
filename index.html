@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Text-to-Speech App</title>
+</head>
+<body>
+  <div class="container">
+    <h1>📖 Text-to-Speech</h1>
+    <input type="file" id="fileInput" accept=".txt,.pdf,.doc,.docx,.jpg,.jpeg,.png" />
+    <textarea id="outputText" placeholder="Extracted text will appear here..."></textarea>
+
+    <div class="controls">
+      <select id="voiceSelect"></select>
+      <button id="playBtn">▶️ Play</button>
+      <button id="pauseBtn">⏸️ Pause</button>
+    </div>
+
+    <div class="translate-controls">
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="te">Telugu</option>
+      </select>
+      <button id="translateBtn">Translate</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
